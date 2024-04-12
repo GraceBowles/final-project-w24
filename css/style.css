@@ -29,13 +29,13 @@ nav ul {
     list-style: none;
 }
 
-#behind {
+.behind {
     background-color: rgb(236, 236, 236);
 
 
 }
 
-#saying {
+.saying {
     background-color: #000;
     color:#fff;
 }
@@ -53,4 +53,15 @@ nav ul {
 footer {
     background-color: #000;
     color:#fff;
+}
+
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+     "img1 img1 img1"
+     "img2 img3 img4"
+    
+    ;
 }
