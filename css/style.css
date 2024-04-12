@@ -59,9 +59,15 @@ footer {
 .grid-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+   
     grid-template-areas: 
      "img1 img1 img1"
      "img2 img3 img4"
     
     ;
+}
+
+.grid-1 img:nth-child(1){
+    grid-area: img1;
 }
