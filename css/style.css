@@ -4,6 +4,7 @@
 
 img {
   width: 100%;
+  border-radius: 4px;
 }
 
 body {
@@ -12,32 +13,51 @@ body {
     padding: 30px;
 }
 
-
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
 
 .wrapper {
     max-width: 1200px;
     margin: auto;
 }
 
-.logo {
-    max-width: 200px;
+#logo {
+    width: 200px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: right;
+nav ul li {
+    display: inline-block;
     list-style: none;
+    padding-left: 10px;
+    text-transform: uppercase;
+    
 }
 
-.behind {
+nav ul li a {
+    padding: 10px;
+    color:#fff;
+    text-decoration: none;
+}
+
+#behind {
     background-color: rgb(236, 236, 236);
-
+    margin: 0;
+   
 
 }
 
-.saying {
+#saying {
     background-color: #000;
     color:#fff;
+    
+}
+
+#saying blockquote {
+    margin-left: 0;
 }
 
 .button {
@@ -45,15 +65,24 @@ nav ul {
     color:#fff;
     text-decoration: none;
     margin: auto;
+    border: 2px solid #000;
+    border-radius: 6px ;
+    padding: 0.5em;
     
 }
 
-
-
-footer {
-    background-color: #000;
-    color:#fff;
+#saying {
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+h2 {
+    display:flex;
+    justify-content: center;
+}
+
+
+
 
 
 .grid-1 {
@@ -70,4 +99,39 @@ footer {
 
 .grid-1 img:nth-child(1){
     grid-area: img1;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 2em;
+}
+
+.grid-2 h3 {
+    display:flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+
+
+.grid-2 p {
+    display:flex;
+    justify-content: center;
+}
+
+.grid-2 article {
+    background-color: rgb(236, 236, 236);
+    border: 2px solid rgb(236, 236, 236);
+    border-radius: 6px ;
+}
+
+footer {
+    background-color: #000;
+    color:#fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
