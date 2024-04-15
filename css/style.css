@@ -216,11 +216,13 @@ footer {
 
 @media (min-width: 960px) {
 
-    .sweet {
+    #sweet {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2em;
     }
+
+   
 }
 
 
